@@ -12,7 +12,7 @@ login_manager.login_view = 'login'
 #login_manager.login_message = 'You have to login first to access this page'
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = '    postgres://iilzmvldnzopop:b4d99aa43574ba8a9200fd218d1a4410c62c2f6958e16b4949fd2f77b7886a2b@ec2-18-233-83-165.compute-1.amazonaws.com:5432/d6rbl82tpnc5h2'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://iilzmvldnzopop:b4d99aa43574ba8a9200fd218d1a4410c62c2f6958e16b4949fd2f77b7886a2b@ec2-18-233-83-165.compute-1.amazonaws.com:5432/d6rbl82tpnc5h2'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['SECRET_KEY'] = os.urandom(24)
 app.config['DEBUG'] = True
