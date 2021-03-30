@@ -12,7 +12,7 @@ login_manager.login_view = 'login'
 #login_manager.login_message = 'You have to login first to access this page'
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://hunter:hunter@localhost:5432/mytest'
+app.config['SQLALCHEMY_DATABASE_URI'] = '    postgres://aiizcsrxgltvcg:2dbacbec40cfc7a3f2ce33bfab13aedfc82ff91fbec5a34dc2b6989a02b0ff11@ec2-18-233-83-165.compute-1.amazonaws.com:5432/dc0jjmj3inle72'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['SECRET_KEY'] = os.urandom(24)
 app.config['DEBUG'] = True
