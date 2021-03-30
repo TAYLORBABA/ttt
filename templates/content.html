@@ -1,0 +1,27 @@
+{% from "nav.html" import render_nav %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Content</title>
+
+	<link rel="stylesheet" type="text/css" href="static/theme.css">
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+</head>
+<body>
+{{ render_nav() }}	
+    
+    {% for user in users %}
+	<div class="container">
+		<div class="list-group">
+		  <a href="#" class="list-group-item list-group-item-action active">User Data</a>	
+		  <a href="#" class="list-group-item list-group-item-action">{{ user.username }}</a>
+		  <a href="#" class="list-group-item list-group-item-action">{{ user.email }}</a>
+		  <a href="#" class="list-group-item list-group-item-action">{{ user.password }}c</a>
+		  <p></p><p></p>
+		</div>
+	</div>
+	{% endfor %}
+    <script src="static/bootstrap.min.js"></script>	
+
+</body>
+</html>
