@@ -19,6 +19,8 @@ app.config['DEBUG'] = True
 app.config['USE_SESSION_FOR_NEXT'] = True
 
 class User(UserMixin, db.Model):
+    __tablename__= 'userlogs'
+
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(255), unique=True)
     email = db.Column(db.String(255), unique=True)
