@@ -13,7 +13,7 @@ login_manager.login_view = 'login'
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://zeteidvgkkegdy:68bbb9ecffddf0b5710c1f2bf7dabf0b9d856b5f57a75a5a9a18338bfbda2ec7@ec2-54-205-183-19.compute-1.amazonaws.com:5432/d67qs4p19834fb'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.urandom(24)
 app.config['DEBUG'] = True
 app.config['USE_SESSION_FOR_NEXT'] = True
